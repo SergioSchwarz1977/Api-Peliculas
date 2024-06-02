@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+    
+}
+.titulos{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px;
+    margin-bottom: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.contenedor .pelicula{
+    text-align: center;
+   
+
+}
+.contenedor .pelicula .titulo{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+
+}
+.contenedor .pelicula .poster{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+.paginacion{
+    position: fixed;
+    bottom: 0%;
+    background-color: rgb(233, 126, 26);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.paginacion button{
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(204, 218, 19);
+    color: black;
+    font-weight: 800;
+    border-radius: 100px;
+    transition: .3s ease-all;
+
+}
+@media(max-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 10px;
+        margin-bottom: 80px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+    .contenedor .pelicula .titulo{
+        font-size: 15px;
+        font-weight: 800;
+        text-align: center;
+    
+    }
+    .contenedor .pelicula .poster{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    
+    }
+    .titulos{
+        font-size: 20px;
+    }
+}
